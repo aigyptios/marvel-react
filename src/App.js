@@ -1,27 +1,15 @@
 import React, { Component} from "react";
 import "./App.css";
 
-import md5 from "md5";
+import ComicViewer from './components/ComicViewer';
 
-class App extends Component{
-
-  componentDidMount() {
-
-    let privateKey = process.env.MARVEL_PRIVATE_KEY;
-    let publicKey = process.env.MARVEL_PUBLIC_KEY;
-    let ts = Date.now();
-    let hash = md5( ts + privateKey + publicKey );
-
-    let query = '?apikey=' + publicKey + '&ts=' + ts + '&hash=' + hash;
-
-    fetch('http://gateway.marvel.com/v1/public/comics' + query);
-  }
+class App extends Component {
 
   render(){
     return(
       <div className="App">
-        <h1> Hello, World! </h1>
-        <p>What's going on?</p>
+        <h1> Marvel Comics </h1>
+        <ComicViewer ></ComicViewer>
       </div>
     );
   }
