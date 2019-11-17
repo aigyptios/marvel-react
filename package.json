@@ -1,7 +1,7 @@
 {
-  "name": "henry-marvel-giaola",
+  "name": "marvel-react",
   "version": "1.0.0",
-  "description": "Coding assessment for Giaola. Structure of app based on https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658",
+  "description": "Coding assessment. Structure of app based on https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
